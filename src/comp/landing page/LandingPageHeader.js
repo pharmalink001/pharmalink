@@ -3,9 +3,9 @@ import './header.css'
 import logo from './img/logo.png'
 import Side from './img/sidepic.png'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
-const LandingPageHeader = () => {
-    const [active, setactive] = useState(false)
+
+const LandingPageHeader = ({active,setactive}) => {
+
   return (
     <>
         <header className='header'>
@@ -32,7 +32,7 @@ const LandingPageHeader = () => {
                    <span className='header-login'>Login</span>
                 </div>
             </nav>
-            <div className='header-content-container'>
+            <div className={active ? "header-content-container unactive" : "header-content-container"}>
                 <div className='header-first-content'>
                     <div className='header-first-content-header'>
                     Connecting the
