@@ -1,0 +1,111 @@
+.Contact-form-header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to right,rgba(27, 78, 178, 0.9),rgba(27, 78, 178, 0.9),rgba(27, 78, 178,0.9)), url('./contact.png');
+    background-size: cover;
+
+
+}
+.contact-form-nav{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.contact-form-ul{
+    display: flex;
+    color: #fff;
+    list-style: none;
+    gap: 20px;
+}
+.contact-header-container > div {
+    color: #fff;
+}
+.contact-section-container{
+    padding: 10px 80px;
+    width: 100vw;
+}
+.contact-input-form-container{
+    display: flex;
+    gap: 140px;
+    padding: 40px 0px;
+}
+.contact-form-input-text{
+    display: flex;
+    flex-direction: column;
+    gap:56px
+}
+.Header-nav-icon{
+    color: #fff;
+}
+.contact-form-input-text >input{
+    padding: 2%;
+    width: 400px;
+    height: 50px;
+    border-radius:5px;
+    background:#fff;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+    color:rgb(27, 78, 178)
+}
+.contact-form-input-textarea > textarea{
+    width: 400px;
+    height: 316px;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+    color: rgb(27, 78, 178);
+}
+.contact-form-input-textarea {
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.contact-form-input-textarea > button{
+    background-color: #aa044e;
+    border: 0;
+    width: 40%;
+    justify-self: center;
+    align-self: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+@media screen and (max-width:600px) {
+    .contact-input-form-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-input-form-container{
+        display: flex;
+        gap: 140px;
+        padding: 10px 0px;
+    }
+    .Contact-form-header{
+        width: 100%;
+        height: 100%;
+        background:linear-gradient(to right,rgba(27, 78, 178, 0.9),rgba(27, 78, 178, 0.9),rgba(27, 78, 178,0.9));
+        background-size: cover;
+    
+    
+    }
+    .contact-input-form-container{
+        display: flex;
+        gap: 57px;
+        padding: 40px 0px;
+    }
+    .contact-form-input-textarea > button{
+        width:20%;
+        position: relative;
+         left: -66px;
+
+    }
+}

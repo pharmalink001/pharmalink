@@ -11,13 +11,20 @@
 .Header-nav{
     display: grid;
     grid-template-columns: 2fr 0fr 3fr 1fr;
+    transition: ease-in-out 0.5s;
+    transition-delay: 1s;
+    -webkit-transition: ease-in-out 0.5s;
+    -moz-transition: ease-in-out 0.5s;
+    -ms-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
 }
 
 .header-ul{
     display: flex;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
     padding: 10px;
+  
 }
 
    .Header-nav-icon{
@@ -60,10 +67,17 @@
 .header-link{
     color: #fff;
     text-decoration: none;
+    transition: ease-in-out 0.3s;
+    transition-delay: 1s;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    -o-transition: ease-in-out 0.3s;
 }
 .header-link:hover{
-    color: #aa044e;
-    border-bottom: 0.5px solid #aa044e;
+    color: #f7368d;
+    font-size: 20px;
+  
 }
 .header-first-content-btn-container{
     margin-top: 60px;
@@ -102,7 +116,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .header{
-        height: 70vh;
+        height: 80vh;
         padding: 0;
     }
     .Header-nav{
@@ -124,15 +138,17 @@
     .header-ul{
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 80px;
         list-style: none;
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 40px;
-        font-weight: 100;
+        font-size: 20px;
+        font-weight: 600;
+        
   
     }
+  
     .unactive{
         display: none;
     }

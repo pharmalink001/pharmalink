@@ -1,16 +1,27 @@
+import { toBeChecked } from '@testing-library/jest-dom/dist/matchers'
 import React from 'react'
 import { useState } from 'react'
 
 const Grid = ({row,col}) => {
- 
+ const [active, setactive] = useState(false)
+ const [first, setfirst] = useState('')
+ const [second, setsecond] = useState('')
     let arr =[]
+    const call =(val)=>{
+        // setfirst(val.i)
+        // setsecond(val.j)
+    }
     for(let i =0;i<row;i++){
+        
         arr[i]=[]
         for(let j= 0;j<col;j++){
             arr[i][j]=0;
+            // console.log(`${first} and${second}`)
+          call({i,j})
         }
        
     }
+   
     //setting the value gotten from the arr into a sate
     const [grid, setgrid] = useState(arr)
     const [color, setcolor] = useState(`#FFF`)
@@ -26,20 +37,20 @@ const Grid = ({row,col}) => {
         width:'20px',
         height:'20px',
         border:'1px solid #000',
-        
+        background:`${active?"black":"white"}`
     }
   return (
     <>
        
         <div style={gridTemplate}>
            {
-               grid.map((col)=>{
-                   return col.map((row)=>{
+               grid.map((col,x)=>{
+                   return col.map((row,w)=>{
                      return  <div onClick={
                          ()=>{
                          
                          }
-                     } style={box}></div>
+                     } style={box}>{first + second}</div>
                    })
                })
            }

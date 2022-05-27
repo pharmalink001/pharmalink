@@ -4,8 +4,9 @@ import Contact from './comp/Contact/Contact'
 import Board from './comp/Gameoflife/Board'
 import LandingPage from './comp/landing page/LandingPage'
 import NotFound from './NotFound'
-
+import { useState } from 'react'
 const App = () => {
+  const [active, setactive] = useState(false)
   return (
    <>
   
@@ -15,8 +16,8 @@ const App = () => {
     {/* setting up routes for the application */}
     
     <Routes>
-      <Route path='/' element={<LandingPage/>}></Route>
-      <Route path='/Contact' element={<Contact/>}></Route>
+      <Route path='/' element={<LandingPage active={active} setactive={setactive}/>}></Route>
+      <Route path='/Contact' element={<Contact active={active} setactive={setactive}/>}></Route>
       <Route path='/Game' element={<Board/>}></Route>
       <Route path='*' element={<NotFound/>}></Route>
     </Routes>

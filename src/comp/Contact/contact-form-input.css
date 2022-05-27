@@ -1,0 +1,11 @@
+.contact-us-formfeild-input{
+    padding: 2%;
+    width: 25%;
+    border-radius:5px;
+    background:#fff;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+    color:rgb(27, 78, 178)
+}
