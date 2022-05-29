@@ -22,6 +22,7 @@ const Contact = ({active,setactive}) => {
         <button>Send</button>
       </div>
   </div>
+
   </section> 
   }
     </div>

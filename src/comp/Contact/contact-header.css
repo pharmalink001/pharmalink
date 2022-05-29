@@ -27,6 +27,7 @@
     display: flex;
     gap: 140px;
     padding: 40px 0px;
+    
 }
 .contact-form-input-text{
     display: flex;
@@ -84,11 +85,11 @@
         display: flex;
         flex-direction: column;
     }
-    .contact-input-form-container{
+    /* .contact-input-form-container{
         display: flex;
         gap: 140px;
         padding: 10px 0px;
-    }
+    } */
     .Contact-form-header{
         width: 100%;
         height: 100%;
@@ -97,15 +98,22 @@
     
     
     }
-    .contact-input-form-container{
+    /* .contact-input-form-container{
         display: flex;
         gap: 57px;
         padding: 40px 0px;
-    }
+    } */
     .contact-form-input-textarea > button{
         width:20%;
         position: relative;
          left: -66px;
 
+    }
+    .contact-section-container{
+        padding: 10px 20px;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
     }
 }

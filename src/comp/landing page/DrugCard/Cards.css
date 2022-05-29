@@ -1,9 +1,9 @@
 .header-cards-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     row-gap: 20px ;
-    column-gap: 20px;
-    padding: 10px;
+    column-gap: 10px;
+    padding: 20px;
     justify-content: center;
    
 }

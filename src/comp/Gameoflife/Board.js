@@ -24,7 +24,7 @@ const Board = ({active,setactive}) => {
         }
         return arr
     }
-   ``
+   
     const createGrid =()=>{
         const arr = new Array()
         for(let i=0;i<=row;i++){

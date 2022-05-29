@@ -1,12 +1,12 @@
 .landingpage-drug-card-container{
     display: flex;
     flex-direction: column;
-    width: 290px;
+    width: 90%;
     box-shadow: 4px -1px 31px #33333347;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
+    -ms-borderradius: 20px;
     -o-border-radius: 20px;
     min-width: 300px;
     gap: 20px;
