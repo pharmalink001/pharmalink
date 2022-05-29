@@ -1,18 +1,15 @@
 import { toBeChecked } from '@testing-library/jest-dom/dist/matchers'
-import React from 'react'
-import { useState } from 'react'
+import { useState,useCallback,useRef } from 'react'
 import produce from 'immer'
-const Grid = ({col,grid,setgrid}) => {
+const Grid = ({col,row,grid,setgrid,isRunning}) => {
 
  
-   
-   
-    // console.log(grid)
+
     //styles for grid
     const gridTemplate ={
         display:'grid',
         gridTemplateColumns:`repeat(${col},20px)`,
-      
+        // gridTemplateRows:`repeat(${row},20px)`,
     }
     //styles for box
     const box ={

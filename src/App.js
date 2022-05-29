@@ -18,7 +18,7 @@ const App = () => {
     <Routes>
       <Route path='/' element={<LandingPage active={active} setactive={setactive}/>}></Route>
       <Route path='/Contact' element={<Contact active={active} setactive={setactive}/>}></Route>
-      <Route path='/Game' element={<Board/>}></Route>
+      <Route path='/Game' element={<Board active={active} setactive={setactive}/>}></Route>
       <Route path='*' element={<NotFound/>}></Route>
     </Routes>
    
