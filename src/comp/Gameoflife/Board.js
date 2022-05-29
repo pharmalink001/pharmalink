@@ -10,7 +10,21 @@ const Board = ({active,setactive}) => {
     const [col, setcol] = useState(50)
     const [isRunning, setisRunning] = useState(false)
     
- 
+    const randomize =()=>{
+        const arr = new Array()
+        for(let i=0;i<=row;i++){
+           arr.push(Array.from(Array(col), ()=> {
+               const random = Math.random()
+               if(random>0.7){
+                   return 1
+               }else{
+                   return 0
+               }
+           }))
+        }
+        return arr
+    }
+   ``
     const createGrid =()=>{
         const arr = new Array()
         for(let i=0;i<=row;i++){
@@ -18,7 +32,7 @@ const Board = ({active,setactive}) => {
         }
         return arr
     }
-    
+  
     const operation =[
         [0, -1],
         [0, 1],
@@ -51,8 +65,8 @@ const Board = ({active,setactive}) => {
                                                     neighbors += g[newi][newj]
                                                     
                                                    
-                                            }
-                                            if(neighbors < 2 ){
+                                            }                                         
+                                            if(g[i][j] === 1  && neighbors < 2 ){
                                                 gridCopy[i][j]= 0
                                               
                                             }else if(neighbors === 3 || neighbors ===2){
@@ -66,9 +80,7 @@ const Board = ({active,setactive}) => {
                                                 gridCopy[i][j] = 1
                                               
                                             }
-                                            let genration = gen
-                                                    genration +=1
-                                                    setgen(genration)
+                                           
                                         })
                                 }
                             }
@@ -108,6 +120,13 @@ const Board = ({active,setactive}) => {
                 setrow(20)
                 setcol(20)
             }}>20X20</button>
+            <button onClick={()=>{
+                   setisRunning(false)
+                setgrid(createGrid)
+            }}>clear</button>
+            <button onClick={()=>{
+                 setgrid(randomize())
+            }}>Random</button>
            {gen}
         </div>
         <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
