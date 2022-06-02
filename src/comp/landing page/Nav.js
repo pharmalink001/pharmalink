@@ -24,7 +24,7 @@ const Nav = ({active,setactive}) => {
         </ul>
     </div>
     <div className={active ? 'header-login-container' : 'header-login-container unactive'}>
-       <span style={{color:'#fff'}} className='header-login'>Login</span>
+       <span style={{color:'#fff'}} className='header-login'><Link className='header-link' to="/Login" onClick={()=>{setactive(false)}}>Login</Link></span>
     </div>
 </nav>
   )

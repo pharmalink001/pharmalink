@@ -86,53 +86,71 @@ const Board = ({active,setactive}) => {
                             }
                     })
                 })
-        setTimeout(runSimulation,1000)
+        setTimeout(runSimulation,100)
        },
        [],
      )
      const [gen, setgen] = useState(1)
     //setting the grid into a state
     const [grid, setgrid] = useState(()=> createGrid())
+    const button ={
+    // width: '60px',
+    // height: '40px',
+    padding: '20px',
+    margin: '20px',
+    background: '#237235',
+    border: '0',
+    color: '#fff',
+    borderRadius: '5px'
+    }
+    const buttonwithcolor ={
+        padding: '20px',
+        margin: '20px',
+        background: `${!isRunning ? '#237235' : '#ff0000cc' }`,
+        border: '0',
+        color: '#fff',
+        borderRadius: '5px'
+    }
   return (
-    <div>
+    <div style={{ background:'#0d1117'}}>
       <div style={{background:'#333'}}>  <Nav active={active} setactive={setactive} /></div>
-        <div>
-        <button onClick={()=>{
+        <div style={{display:'flex',justifyContent:'center'}}>
+        <button style={ buttonwithcolor}  onClick={()=>{
                 setisRunning(!isRunning)
               if(!isRunning){
                   runningRef.current = true
                 return  runSimulation()
               }
             }}>{!isRunning ? "start" : "stop"}</button>
-            <button onClick={()=>{
+            <button style= {button} onClick={()=>{
                 setrow(50)
                 setcol(50)
             }}>50X50</button>
-            <button onClick={()=>{
+            <button style={button} onClick={()=>{
                 setrow(40)
                 setcol(40)
             }}>40X40</button>
-            <button  onClick={()=>{
+            <button style={button}  onClick={()=>{
                 setrow(30)
                 setcol(30)
             }}>30X30</button>
-            <button  onClick={()=>{
+            <button style={button}  onClick={()=>{
                 setrow(20)
                 setcol(20)
             }}>20X20</button>
-            <button onClick={()=>{
+            <button style={ buttonwithcolor} onClick={()=>{
                    setisRunning(false)
                 setgrid(createGrid)
             }}>clear</button>
-            <button onClick={()=>{
+            <button style={button} onClick={()=>{
                  setgrid(randomize())
             }}>Random</button>
-           {gen}
+           
         </div>
         <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
         <Grid isRunning={isRunning} row={row} col={col} grid={grid}setgrid={setgrid}/>
         </div>
-        
+        <div style={{color:'#fff'}}>{console.log(grid)}</div>
     </div>
   )
 }

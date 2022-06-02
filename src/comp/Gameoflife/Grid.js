@@ -8,14 +8,19 @@ const Grid = ({col,row,grid,setgrid,isRunning}) => {
     //styles for grid
     const gridTemplate ={
         display:'grid',
-        gridTemplateColumns:`repeat(${col},20px)`,
+        gridTemplateColumns:`repeat(${col},26px)`,
+        background:'#0d1117',
+        width:'100vw',
+        justifyContent:'center'
         // gridTemplateRows:`repeat(${row},20px)`,
     }
     //styles for box
     const box ={
         width:'20px',
         height:'20px',
-        border:'1px solid #000',
+        borderRadius:'5px',
+        margin:'5px',
+        opacity:'0.5'
        
     }
 
@@ -43,7 +48,7 @@ const Grid = ({col,row,grid,setgrid,isRunning}) => {
                              }
                           
                          }
-                     } style={{...box, background:`${grid[x][w] ? "black":"white"}`}}>{
+                     } style={{...box, background:`${grid[x][w] ? "#237235":"#444"}`}}>{
                        
                      }</div>
                    })

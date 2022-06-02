@@ -126,6 +126,7 @@
         width: 100vw;
         cursor: pointer;
         overflow: none;
+        
     }
     .header-nav-active{
         background-color: #111;
