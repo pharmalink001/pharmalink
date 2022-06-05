@@ -86,7 +86,7 @@ How Linux kernel sees the filesystems
 How can I modify the size of fraction?
 Why would a jury award more punitive damages than what the law allows?
 Why can't President Biden sign an executive order on the gun laws he wants congress to pass?
-Why can Canada’s parliament vote (on gun laws), but even when a single party controls both the U.S. House and Senate a change is all but impossible?
+Why can Canada\’s parliament vote (on gun laws), but even when a single party controls both the U.S. House and Senate a change is all but impossible?
 Why do you take the sqrt of 1/n for RMSE?
 How do you place a multi-page PDF into only 1 page in 1 spread InDesign?
 Is it possible to set the padding character for the printf function of gawk?
@@ -97,7 +97,7 @@ Should I let my coworkers know I can understand their language?
 Absolute Galois group, number theory and the Axiom of Choice
 PGF/TiKZ: When should I choose "--", "to" or "edge" to connect nodes?
 Boost converter inductor calculation
-Accidentally deleted log file of running process `python something.py 2>&1 | tee .log`. Is there a way to still save the output on the tmux-pane?
+Accidentally deleted log file of running process `python something.py 21 | tee .log`. Is there a way to still save the output on the tmux-pane?
 "Moving" clocks
 To Jews in Jesus' time, what did "the Son of Man" mean?
 Would it be possible to have 3 planets that could be colonised by humans in the same system?

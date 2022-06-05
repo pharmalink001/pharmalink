@@ -1,38 +1,78 @@
 .Dashboard-main-container{
     display:grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 300px auto;
     margin-top: 50px; 
 
 }
 .Dashboard-sidebar{
     height: 100%;
-  width: 200px;
+  width: 300px;
   position: fixed;
   z-index: 1;
   left: 0;
-  background-color: #08348b;
+  background-color: #0e2445;
   overflow-x: hidden;
-  padding-top: 20px;
-  color: #333;
+  color: #fff;
   top:0px;
 }
 .Dashboard-main{
-    margin-left: 200px; /* Same as the width of the sidenav */
+    margin-left: 300px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
+    margin-top: 10px;
+ 
+}
+.dashboard-sidebar-logo{
+    height: 60px;
+    background-color: #124eb1;
 }
 .Dashboard-Header{
-    height: 50px;
-    background: #043CAA;
+    height: 60px;
+    background: #124eb1;
     position: fixed;
     top: 0px;
     color:#fff;
     width: 100vw;
-    margin-left:200px
+    margin-left:300px;
+    display: flex;
+    align-items: center;
 }
 .dashboard{
     display: flex;
     flex-direction: column;
+}
+.dashboard-sidebar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dashboard-sidebar-items{
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    border-bottom: .1px solid #999;
+    height: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+.dashboard-sidebar-items:hover{
+    background-color: rgba(153, 153, 153, 0.164);
+}
+.dashboard-sidebar-item-container{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+  
+}
+.dashboard-sidebar-logout{
+    margin-top: 160px;
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 @media screen and (max-width:600px) {
     .Dashboard-sidebar{
