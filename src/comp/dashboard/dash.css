@@ -1,0 +1,47 @@
+.Dashboard-main-container{
+    display:grid;
+    grid-template-columns: 200px auto;
+    margin-top: 50px; 
+
+}
+.Dashboard-sidebar{
+    height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  background-color: #08348b;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: #333;
+  top:0px;
+}
+.Dashboard-main{
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+.Dashboard-Header{
+    height: 50px;
+    background: #043CAA;
+    position: fixed;
+    top: 0px;
+    color:#fff;
+    width: 100vw;
+    margin-left:200px
+}
+.dashboard{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:600px) {
+    .Dashboard-sidebar{
+        display: none;
+    }
+    .Dashboard-main{
+        margin: 0;
+    }
+    .Dashboard-Header{
+        margin: 0;
+    }
+}
