@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Druglist = () => {
+const Druglistpage = () => {
   return (
     <div>Druglist</div>
   )
 }
 
-export default Druglist
+export default Druglistpage
