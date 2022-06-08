@@ -10,24 +10,24 @@ const Sidebar = () => {
     <div  className="Dashboard-sidebar">
        <div className='dashboard-sidebar-container'>
        <div title='logo' className='dashboard-sidebar-logo'>
-          <img src={Logo}/>
+          <img src={Logo} alt="img"/>
         </div>
        <div className='dashboard-sidebar-item-container'>
        <div className='dashboard-sidebar-items'>
-            <img src={Logo2}/>
+            <img src={Logo2} alt="img"/>
             <span>Dashboard</span>
           </div>
           <div className='dashboard-sidebar-items'>
-            <img src={drug}/>
+            <img src={drug} alt="img"/>
             <span>Drug List</span>
           </div>
           <div className='dashboard-sidebar-items'>
-            <img src={sales}/>
-            <span>Drug List</span>
+            <img src={sales} alt="img"/>
+            <span>Sales</span>
           </div>
           <div className='dashboard-sidebar-items'>
-            <img src={store}/>
-            <span>Drug List</span>
+            <img src={store} alt="img"/>
+            <span>Store</span>
           </div>
        </div>
        <div  className=' dashboard-sidebar-logout'>

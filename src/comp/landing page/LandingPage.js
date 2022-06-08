@@ -4,11 +4,15 @@ import LandingSearchBar from './LandingSearchBar'
 import { useState } from 'react'
 import Cards from './DrugCard/Cards'
 import Footer from '../footer/Footer'
-const LandingPage = ({setactive,active}) => {
+import {Navhook} from '../../Contexts/NavContex'
+
+const LandingPage = () => {
+  
+  const active =Navhook()
   
   return (
     <>
-    <LandingPageHeader active={active} setactive={setactive}/>
+    <LandingPageHeader />
     <section className={active ? "unactive" : null}>
     <LandingSearchBar/>
     <Cards/>

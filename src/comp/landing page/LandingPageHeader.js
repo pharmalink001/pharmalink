@@ -4,13 +4,15 @@ import logo from './img/logo.png'
 import Side from './img/sidepic.png'
 import { Link } from 'react-router-dom'
 import Nav from './Nav'
+import {Navhook} from '../../Contexts/NavContex'
 
-const LandingPageHeader = ({active,setactive}) => {
+const LandingPageHeader = () => {
+const active = Navhook()
 
   return (
     <>
         <header className='header'>
-           <Nav active={active} setactive={setactive}/>
+           <Nav/>
             <div className={active ? "header-content-container unactive" : "header-content-container"}>
                 <div className='header-first-content'>
                     <div className='header-first-content-header'>

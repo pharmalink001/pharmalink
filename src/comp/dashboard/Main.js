@@ -1,9 +1,16 @@
 import React from 'react'
+import { useState } from 'react'
 
 const Main = () => {
+  const [time, settime] = useState(Math.floor(Math.random()*20))
+  const link = `https://robohash.org/${time}`
+
   return (
     <div className="Dashboard-main">Main
     <div>
+    <button onClick={()=> settime(Math.floor(Math.random()*100))}>change</button>
+      <img src={link}/>
+     <div>{link}</div>
     Share
 Improve this answer
 Follow

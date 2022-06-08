@@ -3,7 +3,7 @@ import DashHeader from './DashHeader'
 import Main from './Main'
 import Sidebar from './Sidebar'
 import './dash.css'
-
+import { useState } from 'react'
 const Dashboard = () => {
   return (
     <div className='dashboard'>

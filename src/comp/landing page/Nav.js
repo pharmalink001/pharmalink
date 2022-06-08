@@ -1,8 +1,11 @@
 import React from 'react'
 import logo from './img/logo.png'
 import { Link } from 'react-router-dom'
+import {Navhook, Setnavhook} from '../../Contexts/NavContex'
 
-const Nav = ({active,setactive}) => {
+const Nav = () => {
+  const active = Navhook()
+  const setactive = Setnavhook()
   return (
     <nav className= {active ? "Header-nav header-nav-active":'Header-nav' }>
     <div className='header-ham'>

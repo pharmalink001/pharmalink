@@ -2,11 +2,12 @@ import React from 'react'
 import Nav from '../landing page/Nav'
 import ContactFromFeild from './ContactFromFeild'
 import ContactHeader from './ContactHeader'
-
-const Contact = ({active,setactive}) => {
+import {Navhook} from '../../Contexts/NavContex'
+const Contact = () => {
+  const active = Navhook()
   return (
     <div className='Contact-form-header'>
-     <Nav active={active} setactive={setactive}/>
+     <Nav/>
     
   {
     active ? null :   <section className='contact-section-container'>
