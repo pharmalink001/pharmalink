@@ -14,6 +14,24 @@ const Main = () => {
  
   return (
     <div className="Dashboard-main">
+      <div className='Dashboard-main-hearder-nav-header'>Dashboard</div>
+      <div className='Dashboard-main-hearder-nav'>
+        <span className='Dashboard-main-hearder-nav-home'>Home</span>
+        <span className='Dashboard-main-hearder-nav-location'>
+    {
+      Drug === true && "Druglist"
+    }
+     {
+      Sales === true && "Sales"
+    }
+     {
+      Dash === true && "Dashboard"
+    }
+     {
+      Stores === true && "Store"
+    }
+        </span>
+      </div>
     {
       Drug === true && <Druglistpage/>
     }

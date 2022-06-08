@@ -2,7 +2,7 @@ import React from 'react'
 
 const Druglistpage = () => {
   return (
-    <div>Druglist</div>
+    <div></div>
   )
 }
 

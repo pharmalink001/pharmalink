@@ -17,7 +17,7 @@
 }
 .Dashboard-main{
     margin-left: 300px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
+    /* font-size: 28px; Increased text to enable scrolling */
     padding: 0px 10px;
     margin-top: 10px;
  
@@ -73,6 +73,35 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+.Dashboard-main-hearder-nav{
+    font: 12px;
+    display:flex;
+    gap:10px;
+    font-weight: 400;
+ 
+}
+.Dashboard-main-hearder-nav-header{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height */
+    color: #464749;
+}
+.Dashboard-main-hearder-nav-home{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    /* identical to box height */
+    color: #043CAA;
+   
+}
+.Dashboard-main-hearder-nav-location{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    /* identical to box height */
+    color: #000000;
 }
 @media screen and (max-width:600px) {
     .Dashboard-sidebar{
