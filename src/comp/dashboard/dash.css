@@ -147,7 +147,12 @@
     align-items: center;
     gap: 10px;
 }
-@media screen and (max-width:600px) {
+.dashboard-dash-item-info-container{
+    display:flex;
+    justify-content: space-between
+}
+    
+@media screen and (max-width:600px)  {
     .Dashboard-sidebar{
         display: none;
     }
@@ -156,10 +161,19 @@
     }
     .Dashboard-Header{
         margin: 0;
-        gap: 35vw
+        gap:28vw
     }
     .dashboard-card-container {
         grid-template-columns: 230px 230px ;
         gap: 10px;
+    }
+    .dashboard-dash-item-info-container{
+        display:flex;
+        justify-content: space-between;
+        flex-direction:column
+    }
+    .Dashboard-dashboard-main-container{
+        height: max-content;
+        margin-left: -42px;
     }
 }

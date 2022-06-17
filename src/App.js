@@ -10,6 +10,7 @@ import CompleteYourRegistration from './comp/Login/CompleteYourRegistration'
 import Dashboard from './comp/dashboard/Dashboard'
 import Nav from './comp/landing page/Nav'
 import { NavCont } from './Contexts/NavContex'
+import { LoginContext } from './Contexts/LoginContext'
  const App = () => {
   //states
   const [active, setactive] = useState(false)  
@@ -17,6 +18,7 @@ import { NavCont } from './Contexts/NavContex'
    <>
     {/* setting up routes for the application */}
   <NavCont>
+    <LoginContext>
     <Routes>
       <Route path='/' element={<LandingPage/>}></Route>
       <Route path='/Contact' element={<Contact/>}></Route>
@@ -25,6 +27,7 @@ import { NavCont } from './Contexts/NavContex'
       <Route path='/Dashboard' element={<Dashboard/>}></Route>
       <Route path='*' element={<NotFound/>}></Route>
     </Routes>
+    </LoginContext>
   </NavCont>
     </>
   )
